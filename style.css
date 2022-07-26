@@ -1,3 +1,35 @@
+body {
+    text-align: center;
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.principal {
+    align-self: center;
+    height: 70%;
+    width: 70%;
+    background: white;
+    border-radius: 15px;
+}
+
+
 .produto {
     font-size: 14px;
+}
+
+.descricao_produto {
+    color: blue;
+}
+
+.precos {
+    display: inline-flex;
+}
+
+.produto_imagem {
+    height: 350px;
+    position: relative;
+    float: left;
 }
