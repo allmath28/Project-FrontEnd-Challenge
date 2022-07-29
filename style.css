@@ -2,55 +2,101 @@ body {
     text-align: center;
     background: hsl(30, 38%, 92%);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
 }
 
 .principal {
-    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     height: 70%;
-    width: 70%;
+    width: 50%;
     background: white;
     border-radius: 15px;
 }
 
+.info_produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 .produto {
     color: hsl(228, 12%, 48%);
     font-size: 14px;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 30px;
     
 }
 
 .nome_produto {
     font-family: 'Fraunces', serif;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 30px;
 }
 
 .descricao_produto {
     color: hsl(228, 12%, 48%);
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 30px;
 }
 
 .precos {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 #preco {
     font-family: 'Fraunces', serif;
-    margin-right: 25px;
+    margin: 0 25px 0 0;
     font-size: 50px;
     font-weight: 700;
     color: hsl(158, 36%, 37%);
 }
 
 #preco-velho {
-    color: hsl(228, 12%, 48%)
-    
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
 }
 
 .produto_imagem {
-    height: 350px;
+    height: 27em;
     position: relative;
     float: left;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 40px;
+    margin: 5% auto;
+    border: 0px;
+    border-radius: 10px;
+    background: hsl(158, 36%, 37%);
+    font-weight: bolder;
+}
+
+.botao:active{
+    background: hsl(158, 36%, 22%);
+}
+
+.botao p {
+    color: hsl(0, 0%, 100%);
+}
+
+.botao p::before{
+    content: url(./images/icon-cart.svg);
+    margin: auto 15px auto auto;
 }
