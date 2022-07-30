@@ -9,12 +9,14 @@ body {
 }
 
 .principal {
+    position: relative;
+    top: 5em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 70%;
     width: 50%;
-    background: white;
+    background: hsl(0, 0%, 100%);
     border-radius: 15px;
 }
 
@@ -68,7 +70,7 @@ body {
 }
 
 .produto_imagem {
-    height: 27em;
+    height: 500px;
     position: relative;
     float: left;
     border-bottom-left-radius: 15px;
@@ -99,4 +101,34 @@ body {
 .botao p::before{
     content: url(./images/icon-cart.svg);
     margin: auto 15px auto auto;
+}
+
+
+@media screen and (max-width: 375px) {
+    .principal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto_imagem {
+        content: url(images/image-product-mobile.jpg);
+        width: 100%;
+        height: 50%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .precos {
+        justify-content: flex-start;
+        padding-left: 6%;
+    }
+
+    .botao {
+        width: 80%;
+    }
 }
